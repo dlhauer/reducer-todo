@@ -27,7 +27,10 @@ function TodoForm(props) {
         value={todo}
       />
       <button>add</button>
-      <button className='clear-btn'>Clear completed</button>
+      <button 
+        onClick={ () => props.dispatch( {type: 'CLEAR_COMPLETED'} )} className='clear-btn'>
+        Clear completed
+      </button>
     </form>
   )
 }

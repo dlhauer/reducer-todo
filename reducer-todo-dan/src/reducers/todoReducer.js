@@ -1,16 +1,16 @@
 export const initialState = [
     {
-      item: 'Eat breakfast',
+      item: 'eat breakfast',
       completed: false,
       id: 5053972
     },
     {
-      item: 'Eat lunch',
+      item: 'eat lunch',
       completed: false,
       id: 4480145
     },
     {
-      item: 'Eat dinner',
+      item: 'eat dinner',
       completed: false,
       id: 5905068
     },
@@ -34,6 +34,8 @@ export const reducer = (state, action) => {
         // }
         return item.id === action.payload ? {...item, completed: !item.completed} : {...item}
       })
+      case 'CLEAR_COMPLETED' :
+        return state.filter(item => item.completed === false)
     default:
       return state;
   }
