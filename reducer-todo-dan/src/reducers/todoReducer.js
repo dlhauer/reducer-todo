@@ -16,7 +16,7 @@ export const initialState = [
     },
 ];
 
-export const todoReducer = (state, action) => {
+export const reducer = (state, action) => {
   switch(action.type) {
     default:
       return state;
