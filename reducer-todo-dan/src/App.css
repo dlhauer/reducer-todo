@@ -40,3 +40,8 @@
 input, button {
   margin: 5px;
 }
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}

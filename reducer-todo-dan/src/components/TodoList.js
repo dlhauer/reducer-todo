@@ -6,7 +6,7 @@ function TodoList(props) {
     <div>
       {/* <h2>TodoList</h2> */}
       {props.todos.map( item => (
-        <Todo key={item.id} todo={item}/>
+        <Todo key={item.id} todo={item} dispatch={props.dispatch}/>
       ))}
       {/* <Todo/> */}
     </div>
