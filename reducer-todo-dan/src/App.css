@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 .App {
   text-align: center;
 }
@@ -37,11 +40,28 @@
   }
 }
 
+body, input, button {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 1.6rem;
+}
+
 input, button {
   margin: 5px;
+  /* height: 25px; */
+  border-radius: 5px;
+  padding: 7px;
+}
+
+button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.clear-btn {
+  background-color: crimson;
 }
 
 .completed {
-  color: gray;
+  color: lightgray;
   text-decoration: line-through;
 }
